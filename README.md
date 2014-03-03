@@ -1,6 +1,8 @@
 earth
 =====
 
+## SMM customizations for use in the Conner Prairie exhibit.
+
 **NOTE: the location of `dev-server.js` has changed from `{repository}/server/` to `{repository}/`**
 
 "earth" is a project to visualize global weather conditions.
