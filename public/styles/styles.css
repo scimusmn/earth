@@ -189,14 +189,14 @@ body {
 
 .sup {
     position: relative;
-   	bottom: 0.3em;
-   	font-size: 0.6em;
+    bottom: 0.3em;
+    font-size: 0.6em;
 }
 
 .sub {
     position: relative;
-   	top: 0.3em;
-   	font-size: 0.6em;
+    top: 0.3em;
+    font-size: 0.6em;
 }
 
 /**************************************************************************************************
