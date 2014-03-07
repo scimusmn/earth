@@ -1,7 +1,12 @@
-earth
-=====
+# Earth - A customized fork off cambecc's earth visualization
 
-## SMM customizations for use in the Conner Prairie exhibit.
+## Credit
+
+This fork represents some small modifications made by the Science Museum of
+Minnesota, to cambecc's original work, which we are modifying under the MIT
+License.
+
+## Orignal project documentation
 
 **NOTE: the location of `dev-server.js` has changed from `{repository}/server/` to `{repository}/`**
 
