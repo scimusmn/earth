@@ -1,4 +1,5 @@
-# Earth - A customized fork off cambecc's earth visualization
+# Earth
+A customized fork off [cambecc's earth visualization](https://github.com/cambecc/earth)
 
 ## Credit
 
