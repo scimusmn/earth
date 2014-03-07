@@ -7,18 +7,6 @@ This fork represents some small modifications made by the Science Museum of
 Minnesota, to cambecc's original work, which we are modifying under the MIT
 License.
 
-## Orignal project documentation
-
-**NOTE: the location of `dev-server.js` has changed from `{repository}/server/` to `{repository}/`**
-
-"earth" is a project to visualize global weather conditions.
-
-An instance of "earth" is available at http://earth.nullschool.net.
-
-"earth" is a personal project I've used to learn javascript and browser programming, and is based on the earlier
-[Tokyo Wind Map](https://github.com/cambecc/air) project.  Feedback and contributions are welcome! ...especially
-those that clarify accepted best practices.
-
 building and launching
 ----------------------
 
