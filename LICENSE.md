@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) 2014 Cameron Beccario
+Original work copyright (c) 2014 Cameron Beccario
+Modified work copyright (c) 2014 Science Museum of Minnesota
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
