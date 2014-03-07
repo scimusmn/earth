@@ -3,8 +3,8 @@ A customized fork off [cambecc's earth visualization](https://github.com/cambecc
 
 ## Credit
 
-This fork represents some small modifications made by the Science Museum of
-Minnesota, to cambecc's original work, which we are modifying under the MIT
+This fork represents some small modifications made by the [Science Museum of
+Minnesota](http://www.smm.org), to cambecc's original work, which we are modifying under the MIT
 License.
 
 building and launching
