@@ -218,12 +218,16 @@
             var o = topo.objects;
             var coastLo = topojson.feature(topo, µ.isMobile() ? o.coastline_tiny : o.coastline_110m);
             var coastHi = topojson.feature(topo, µ.isMobile() ? o.coastline_110m : o.coastline_50m);
+            var countriesLo = topojson.feature(topo, µ.isMobile() ? o.admin_0_boundary_lines_land : o.admin_0_boundary_lines_land );
+            var statesLo = topojson.feature(topo, µ.isMobile() ? o.states_provinces_lines : o.states_provinces_lines);
             var lakesLo = topojson.feature(topo, µ.isMobile() ? o.lakes_tiny : o.lakes_110m);
             var lakesHi = topojson.feature(topo, µ.isMobile() ? o.lakes_110m : o.lakes_50m);
             log.timeEnd("building meshes");
             return {
                 coastLo: coastLo,
                 coastHi: coastHi,
+                countriesLo: countriesLo,
+                statesLo: statesLo,
                 lakesLo: lakesLo,
                 lakesHi: lakesHi
             };
@@ -298,7 +302,9 @@
 
         var path = d3.geo.path().projection(globe.projection).pointRadius(7);
         var coastline = d3.select(".coastline");
+        var countries = d3.select(".countries");
         var lakes = d3.select(".lakes");
+        var states = d3.select(".states");
         d3.selectAll("path").attr("d", path);  // do an initial draw -- fixes issue with safari
 
         function drawLocationMark(point, coord) {
@@ -337,6 +343,8 @@
             inputController, {
                 moveStart: function() {
                     coastline.datum(mesh.coastLo);
+                    countries.datum(mesh.countriesLo);
+                    states.datum(mesh.statesLo);
                     lakes.datum(mesh.lakesLo);
                     rendererAgent.trigger("start");
                 },
