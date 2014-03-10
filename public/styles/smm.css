@@ -1,0 +1,96 @@
+/*
+ * SMM Custom styles
+ */
+
+/* VAG Rounded Thin */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, svg, canvas {
+  font-family: 'din-out', Fallback, sans-serif;
+  font-size: 1em;
+  /*letter-spacing: -1px;*/
+  /*line-height: 3.5em;*/
+}
+
+#headline {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  pointer-events: none;  /* This div is just a container--do not let it interfere with operation of the map. */
+  z-index: 99;
+}
+
+#headline h1 {
+  font-family: 'fairfax', Fallback, sans-serif;
+  font-size: 5em;
+  background: rgb(243, 140, 47);
+  padding: 10px 40px 5px 30px;
+  line-height: 1.2em;
+}
+
+#details {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    width: 20%;
+}
+#date-pickers {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    width: 50%;
+}
+#date-pickers p {
+  display: block;
+  float: right;
+  margin: .rem;
+}
+
+.date-picker {
+  background-color: rgba(0, 0, 5, 0.9);
+  box-shadow: 0 4px 20px #000;
+  border-radius: 0.5rem/0.5rem;
+  display: table;
+  margin-top: 1rem;
+  padding: 1.2rem 1.8rem;
+  pointer-events: all;
+}
+
+@font-face {
+    font-family: 'fairfax';
+    src: url('../fonts/fairfaxstationnf-webfont.eot');
+    src: url('../fonts/fairfaxstationnf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fairfaxstationnf-webfont.woff') format('woff'),
+         url('../fonts/fairfaxstationnf-webfont.ttf') format('truetype'),
+         url('../fonts/fairfaxstationnf-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din';
+    src: url('../fonts/dinroundot-webfont.eot');
+    src: url('../fonts/dinroundot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dinroundot-webfont.woff') format('woff'),
+         url('../fonts/dinroundot-webfont.ttf') format('truetype'),
+         url('../fonts/dinroundot-webfont.svg') format('svg');
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+}
+
+@font-face {
+    font-family: 'din-out';
+    src: url('../fonts/dinroundot-light-webfont.eot');
+    src: url('../fonts/dinroundot-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dinroundot-light-webfont.woff') format('woff'),
+         url('../fonts/dinroundot-light-webfont.ttf') format('truetype'),
+         url('../fonts/dinroundot-light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrafaceSlabDisplay-Bold';
+    src: url('../fonts/NeutrafaceSlabDisplay-Bold.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
