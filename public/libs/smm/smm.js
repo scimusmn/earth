@@ -15,14 +15,14 @@
         //window.location=$(this).find("a").attr("href");
         window.location="http://127.0.0.1:8090/#" +
             daysBack1.format('YYYY/MM/DD') +
-            "/0000Z/wind/surface/level/equirectangular=-99.43,35.45,2048";
+            "/0000Z/wind/surface/level/equirectangular=-86.02,39.98,2048";
         return false;
     });
     $('#show-today').click(function(){
         //window.location=$(this).find("a").attr("href");
         window.location="http://127.0.0.1:8090/#" +
             now.format('YYYY/MM/DD') +
-            "/0000Z/wind/surface/level/equirectangular=-99.43,35.45,2048";
+            "/0000Z/wind/surface/level/equirectangular=-86.02,39.98,2048";
         return false;
     });
 })();
