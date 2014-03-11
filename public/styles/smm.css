@@ -8,6 +8,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: none;
 }
 
 #progress {
@@ -140,7 +141,7 @@ a, .text-button {
 
 a:hover, a:focus, .no-touch .text-button:hover, .no-touch .text-button:focus, .text-button:active {
     color: #000;
-    cursor: pointer;
+    cursor: none;
 }
 
 .date-picker span.text-button {
