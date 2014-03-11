@@ -2,56 +2,148 @@
  * SMM Custom styles
  */
 
-/* VAG Rounded Thin */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, svg, canvas {
-  font-family: 'din-out', Fallback, sans-serif;
-  font-size: 1em;
-  /*letter-spacing: -1px;*/
-  /*line-height: 3.5em;*/
+.cp {
+    stroke: #FFF;
+    stroke-width: 0;
+    fill: #FFF;
+    z-index: 1000;
 }
 
-#headline {
+.firefox .cp {
+    stroke-width: 1.0;
+}
+
+/* Fonts */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, svg, canvas {
+  font-family: 'pnova', Fallback, sans-serif;
+  font-size: 1em;
+}
+
+/* Toolbar */
+#toolbar {
+  /*border-top: 2px solid #000;*/
+  /*background: #FFF;*/
   position: absolute;
-  top: 3%;
-  left: 2%;
-  pointer-events: none;  /* This div is just a container--do not let it interfere with operation of the map. */
+  left: 0;
+  bottom: 0;
+  width: 96%;
+  height: 120px;
+  padding: 15px 2% 0 2%;
+  margin: 0;
   z-index: 99;
+  pointer-events: none;
+
+  background: rgb(96,96,96); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(96,96,96,1) 0%, rgba(255,255,255,1) 4%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(96,96,96,1)), color-stop(4%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(96,96,96,1) 0%,rgba(255,255,255,1) 4%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(96,96,96,1) 0%,rgba(255,255,255,1) 4%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(96,96,96,1) 0%,rgba(255,255,255,1) 4%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(96,96,96,1) 0%,rgba(255,255,255,1) 4%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#toolbar #headline,
+#toolbar #scale-box {
+  border-right: 1px solid #333;
+  float: left;
+}
+
+/* Title */
+#toolbar #headline {
+  width: 12%;
+  margin-right: 1%;
 }
 
 #headline h1 {
+  color: #000;
   font-family: 'fairfax', Fallback, sans-serif;
-  font-size: 5em;
-  background: rgb(243, 140, 47);
-  padding: 10px 40px 5px 30px;
-  line-height: 1.2em;
+  font-size: 3.2rem;
+  line-height: 1em;
 }
 
-#details {
-    position: absolute;
-    bottom: 3%;
-    right: 2%;
-    width: 20%;
+/* Legend */
+#scale-box {
+  width: 21%;
+  padding-top: 10px;
+  padding-right: 1.5%;
+  height: 92px;
 }
-#date-pickers {
-    position: absolute;
-    bottom: 3%;
-    right: 2%;
-    width: 50%;
+
+/* We need to be more explicit here to override a parent style */
+#toolbar #scale-box p {
+  margin: 0 15px;
 }
-#date-pickers p {
-  display: block;
+
+#scale-label {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 1em;
+}
+
+#scale {
+  width: 100%;
+  height: 15px;
+}
+
+#scale-label-slow,
+#scale-label-fast {
+  color: #333;
+  font-size: 1.3em;
+  margin: 0 15px;
+}
+
+#scale-label-slow {
+  clear: both;
+  float: left;
+}
+
+#scale-label-fast {
   float: right;
-  margin: .rem;
+}
+
+/* Date pickers */
+#date-pickers{
+  padding-top: 8px;
 }
 
 .date-picker {
-  background-color: rgba(0, 0, 5, 0.9);
-  box-shadow: 0 4px 20px #000;
-  border-radius: 0.5rem/0.5rem;
-  display: table;
-  margin-top: 1rem;
-  padding: 1.2rem 1.8rem;
+  float: right;
+  background-color: #FFF;
+  box-shadow: 0 2px 14px #909090;
+  border-radius: 0.4rem/0.4rem;
+  padding: .8rem 1rem;
   pointer-events: all;
+  margin: 0 0 0 .7em;
+  line-height: .5rem;
+}
+
+.date-picker span.text-button {
+  color: #000;
+  font-size: 1.7rem;
+}
+
+.date-string {
+  font-size: 1.3rem;
+}
+
+/* Messages and alerts */
+#details {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width: 20%;
+}
+
+@font-face {
+    font-family: 'pnova';
+    src: url('../fonts/proxima_nova_reg-webfont.eot');
+    src: url('../fonts/proxima_nova_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_reg-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_reg-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_reg-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
