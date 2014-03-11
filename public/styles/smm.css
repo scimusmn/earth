@@ -10,6 +10,10 @@
   user-select: none;
 }
 
+#progress {
+  font-size: 2.4rem;
+}
+
 .cp {
     stroke: #FFF;
     stroke-width: 0;
