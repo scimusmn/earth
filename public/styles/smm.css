@@ -126,9 +126,29 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, svg, canvas {
   line-height: .5rem;
 }
 
+a, .text-button {
+    color: #000;
+}
+
+.text-button.disabled {
+    color: #444444;
+}
+
+a:hover, a:focus, .no-touch .text-button:hover, .no-touch .text-button:focus, .text-button:active {
+    color: #000;
+    cursor: pointer;
+}
+
 .date-picker span.text-button {
   color: #000;
   font-size: 1.7rem;
+}
+.date-picker.highlighted {
+  background: rgb(243, 140, 47);
+}
+
+.date-picker.highlighted span.text-button {
+  color: black;
 }
 
 .date-string {
