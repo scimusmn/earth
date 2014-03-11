@@ -21,7 +21,7 @@
     // Longest date strings for design testing
     // $('#show-today').html('Today<br /><span class="date-string">' + testOne.format('MMMM D') + '</span>');
     // $('#show-back-1').html('Yesterday<br /><span class="date-string">' + testTwo.format('MMMM D') + '</span>');
-    var buttonSpan = '<span class="text-button" title="menu">';
+    var buttonSpan = '<span class="text-button">';
     $('#show-today').addClass('highlighted');
     $('#show-today').html(buttonSpan + 'Today<br /><span class="date-string">' + now.format('MMMM D') + '</span></span>');
     $('#show-back-1').html(buttonSpan + 'Yesterday<br /><span class="date-string">' + daysBack1.format('MMMM D') + '</span></span>');
