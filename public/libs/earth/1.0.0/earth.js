@@ -163,7 +163,11 @@
             }
         }, MOVE_END_WAIT);  // wait for a bit to decide if user has stopped moving the globe
 
-        d3.select("#display").call(zoom);
+        // Disabling zoom and pan
+        //
+        // In our fork we don't want the user to be able to move the map
+        // We just stay on the initial viewport
+        // d3.select("#display").call(zoom);
         d3.select("#show-location").on("click", function() {
             if (navigator.geolocation) {
                 report.status("Finding current position...");
