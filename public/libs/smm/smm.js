@@ -8,6 +8,28 @@
      */
     var homeCoords = '-93.40,35.35,2048';
 
+    /**
+     * Screensaver
+     */
+    var s_saver;
+    var s_saver_timeout = 180000; // Miliseconds
+
+    // Load the screensaver if the time runs out
+    $(window).bind("load", function() {
+        s_saver = setTimeout(function(){
+            $('#screensaver').fadeIn(1000);
+        }, s_saver_timeout);
+    });
+
+    // Turn off the screensaver on a click, and start timing again
+    $('body').mousedown(function() {
+        $('#screensaver').hide();
+        clearTimeout(s_saver);
+        s_saver = setTimeout(function(){
+            $('#screensaver').fadeIn(1000);
+        }, s_saver_timeout);
+    });
+
     /*
      * Add dates to the event buttons
      */
