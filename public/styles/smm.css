@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   background: red;
+  z-index: 1001;
 }
 
 #credit {
@@ -46,10 +47,6 @@
   left: 1900px;
   /*background: #FFF;*/
   color: #BBB;
-}
-
-#credit,
-#screensaver {
   z-index: 1000;
 }
 
