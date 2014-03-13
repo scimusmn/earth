@@ -90,7 +90,7 @@
         //window.location=$($(this)).find("a").attr("href");
         window.location="http://127.0.0.1:8090/#" +
             hurricaneKatrina.format('YYYY/MM/DD') +
-            "/0000Z/wind/surface/level/equirectangular=" + homeCoords;
+            "/0600Z/wind/surface/level/equirectangular=" + homeCoords;
         $('.date-picker').removeClass('highlighted');
         $(this).addClass('highlighted');
         return false;
