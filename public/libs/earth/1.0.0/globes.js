@@ -188,6 +188,8 @@ var globes = function() {
                 mapSvg.append("path")
                     .attr("class", "cp");
                 mapSvg.append("path")
+                    .attr("class", "ind");
+                mapSvg.append("path")
                     .attr("class", "countries");
                 mapSvg.append("path")
                     .attr("class", "states");
