@@ -210,10 +210,7 @@ body {
 }
 
 .ind {
-    stroke: red;
-    stroke-width: 4.25;
-    fill: white;
-    z-index: 1000;
+  fill: white;
 }
 
 .firefox .coastline, .firefox .countries, .firefox .ind, .firefox .states, .firefox .lakes, {
