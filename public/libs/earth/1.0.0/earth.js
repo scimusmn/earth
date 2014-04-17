@@ -223,6 +223,7 @@
             var coastLo = topojson.feature(topo, µ.isMobile() ? o.coastline_tiny : o.coastline_110m);
             var coastHi = topojson.feature(topo, µ.isMobile() ? o.coastline_110m : o.coastline_50m);
             var cpLo = topojson.feature(topo, µ.isMobile() ? o.cp : o.cp );
+            var indLo = topojson.feature(topo, µ.isMobile() ? o.indiana : o.indiana );
             var countriesLo = topojson.feature(topo, µ.isMobile() ? o.admin_0_boundary_lines_land : o.admin_0_boundary_lines_land );
             var statesLo = topojson.feature(topo, µ.isMobile() ? o.states_provinces_lines : o.states_provinces_lines);
             var lakesLo = topojson.feature(topo, µ.isMobile() ? o.lakes_tiny : o.lakes_110m);
@@ -232,6 +233,7 @@
                 coastLo: coastLo,
                 coastHi: coastHi,
                 cpLo: cpLo,
+                indLo: indLo,
                 countriesLo: countriesLo,
                 statesLo: statesLo,
                 lakesLo: lakesLo,
@@ -309,6 +311,7 @@
         var path = d3.geo.path().projection(globe.projection).pointRadius(7);
         var coastline = d3.select(".coastline");
         var cp = d3.select(".cp");
+        var ind = d3.select(".ind");
         var countries = d3.select(".countries");
         var lakes = d3.select(".lakes");
         var states = d3.select(".states");
@@ -351,6 +354,7 @@
                 moveStart: function() {
                     coastline.datum(mesh.coastLo);
                     cp.datum(mesh.cpLo);
+                    ind.datum(mesh.indLo);
                     countries.datum(mesh.countriesLo);
                     states.datum(mesh.statesLo);
                     lakes.datum(mesh.lakesLo);

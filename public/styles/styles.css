@@ -209,7 +209,11 @@ body {
     fill: none;
 }
 
-.firefox .coastline, .firefox .countries, .firefox .states, .firefox .lakes, {
+.ind {
+  fill: white;
+}
+
+.firefox .coastline, .firefox .countries, .firefox .ind, .firefox .states, .firefox .lakes, {
     stroke-width: 1.0;
 }
 

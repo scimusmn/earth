@@ -186,6 +186,8 @@ var globes = function() {
                 mapSvg.append("path")
                     .attr("class", "coastline");
                 mapSvg.append("path")
+                    .attr("class", "ind");
+                mapSvg.append("path")
                     .attr("class", "cp");
                 mapSvg.append("path")
                     .attr("class", "countries");

@@ -55,14 +55,13 @@
 }
 
 .cp {
-    stroke: #FFF;
-    stroke-width: 0;
-    fill: #FFF;
-    z-index: 1000;
+    stroke: #000;
+    stroke-width: 5;
+    fill: #000;
 }
 
 .firefox .cp {
-    stroke-width: 1.0;
+    stroke-width: 5.0;
 }
 
 /* Fonts */
