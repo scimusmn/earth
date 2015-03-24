@@ -2,11 +2,10 @@
     // Hide the full controls
     $('#earth').hide();
 
-    /*
-     * This isn't directly centered on Conner Prairie, but it displays most
-     * of the US and the Gulf of Mexico, which is important for Katrina
+    /**
+     * Centering the home coordinates on Mystic Seaport
      */
-    var homeCoords = '-93.40,35.35,2048';
+    var homeCoords = '-71.96,41.36,2048';
 
     /**
      * Screensaver
