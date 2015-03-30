@@ -5,7 +5,7 @@
     /**
      * Centering the home coordinates on Mystic Seaport
      */
-    var homeCoords = '-71.96,46.36,2048';
+    var homeCoords = '-71.96,36.36,2048';
 
     /**
      * Screensaver
