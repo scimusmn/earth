@@ -37,7 +37,7 @@
     var testOne = moment('September 29, 2092');
     var testTwo = moment('September 28, 2092');
     var hurricaneSandy = moment('October 29, 2012');
-    var indianaTornados = moment('March 2, 2012');
+    //var indianaTornados = moment('March 2, 2012');
     var hurricaneKatrina = moment('August 29, 2005');
     // Longest date strings for design testing
     // $('#show-today').html('Today<br /><span class="date-string">' + testOne.format('MMMM D') + '</span>');
@@ -47,7 +47,7 @@
     $('#show-today').html(buttonSpan + 'Today<br /><span class="date-string">' + now.format('MMMM D') + '</span></span>');
     $('#show-back-1').html(buttonSpan + 'Yesterday<br /><span class="date-string">' + daysBack1.format('MMMM D') + '</span></span>');
     $('#show-sandy').html(buttonSpan + 'Hurricane Sandy<br /><span class="date-string">' + hurricaneSandy.format('MMMM D, YYYY') + '</span></span>');
-    $('#show-indiana').html(buttonSpan + 'Indiana Tornados<br /><span class="date-string">' + indianaTornados.format('MMMM D, YYYY') + '</span></span>');
+    //$('#show-indiana').html(buttonSpan + 'Indiana Tornados<br /><span class="date-string">' + indianaTornados.format('MMMM D, YYYY') + '</span></span>');
     $('#show-katrina').html(buttonSpan + 'Hurricane Katrina<br /><span class="date-string">' + hurricaneKatrina.format('MMMM D, YYYY') + '</span></span>');
     $('#show-today').click(function(){
         //window.location=$(this).find("a").attr("href");
@@ -76,15 +76,15 @@
         $(this).addClass('highlighted');
         return false;
     });
-    $('#show-indiana').click(function(){
-        //window.location=$($(this)).find("a").attr("href");
-        window.location="http://127.0.0.1:8090/#" +
-            indianaTornados.format('YYYY/MM/DD') +
-            "/1800Z/wind/surface/level/equirectangular=" + homeCoords;
-        $('.date-picker').removeClass('highlighted');
-        $(this).addClass('highlighted');
-        return false;
-    });
+    //$('#show-indiana').click(function(){
+        ////window.location=$($(this)).find("a").attr("href");
+        //window.location="http://127.0.0.1:8090/#" +
+            //indianaTornados.format('YYYY/MM/DD') +
+            //"/1800Z/wind/surface/level/equirectangular=" + homeCoords;
+        //$('.date-picker').removeClass('highlighted');
+        //$(this).addClass('highlighted');
+        //return false;
+    //});
     $('#show-katrina').click(function(){
         //window.location=$($(this)).find("a").attr("href");
         window.location="http://127.0.0.1:8090/#" +
