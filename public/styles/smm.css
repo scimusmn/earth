@@ -55,9 +55,9 @@
 }
 
 .cp {
-    stroke: #000;
+    stroke: transparent;
     stroke-width: 5;
-    fill: #000;
+    fill: transparent;
 }
 
 .firefox .cp {
